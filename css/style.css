@@ -280,7 +280,8 @@ li {
 /*     Home     */
 /****************/
 .home {
-	background-image: url(../assets/images/bg_mujer.jpg);
+	background-image: url(../assets/images/bg_rojo.jpg);
+	/* background-size: auto; */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
