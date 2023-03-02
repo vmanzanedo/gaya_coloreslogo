@@ -248,7 +248,7 @@ li {
 		/* from(#0ee951),
 		to(#00dabf) */
 		from(#E31E25),
-		to(#E31E25)
+		to(#0C4B80)
 	);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -330,9 +330,11 @@ li {
 	background-image: none;
 	background: transparent;
 	/* border-image-source: var(--gradient); */
-	border: 1px SOLID #E31E25;
+	border: 1px SOLID #0C4B80;
+	/* border: 1px SOLID #E31E25; */
 	/* box-shadow: 5px 5px 0px 0px var(--secondary); */
-	box-shadow: 5px 5px 0px 0px #E31E25;
+	/* box-shadow: 5px 5px 0px 0px #E31E25; */
+	box-shadow: 5px 5px 0px 0px #0C4B80;
 }
 
 .btn:hover {
