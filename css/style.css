@@ -227,11 +227,17 @@ li {
 }
 
 .navbar .nav-item .nav-link {
-	color: #eee;
+	color: #E31E25;
 	text-decoration: none;
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
 	transition: all 0.2s ease;
+}
+.curret-page{
+	color:#0C4B80;
+}
+.active{
+	color:#0C4B80;
 }
 
 .navbar .fa-stack {
@@ -280,7 +286,7 @@ li {
 /*     Home     */
 /****************/
 .home {
-	background-image: url(../assets/images/bg_rojo.jpg);
+	background-image: url(../assets/images/bck8.jpg);
 	/* background-size: auto; */
 	background-size: cover;
 	background-position: center;
