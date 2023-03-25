@@ -80,7 +80,8 @@ li {
 	position: relative;
 }
 .services{
-	height: 170vh;
+	/* height: 170vh; */
+	height: 280vh;
 	position: relative;
 }
 /* .contact, */
@@ -505,8 +506,8 @@ li {
 }
 
 .slider-1 .avatar {
-	width: 70px;
-	height: 70px;
+	width: 75px;
+	height: 75px;
 	border-radius: 50%;
 }
 
