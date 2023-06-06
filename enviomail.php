@@ -27,18 +27,21 @@ $error = "";
 $filename = "";
 $file =  "";
 
-$mailto="diagnosticogaya@gmail.com"; // a quien se envia 
+$mailto="vivimanzanedo@gmail.com"; // a quien se envia 
+// $mailto="diagnosticogaya@gmail.com"; // a quien se envia 
 $recipient="diagnosticogaya@gmail.com"; //persona a la que se envia
 $subject = "Consulta Web."; //asunto
-$mailfrom = $_REQUEST['form_mail'];
-$telefono = $_REQUEST['form_telefono'];
+// $mailfrom = $_REQUEST['form_mail'];
+// $telefono = $_REQUEST['form_telefono'];
+$mailfrom = $_POST['form_mail'];
+$telefono = $_POST['form_telefono'];
 $message = "Este mensaje fue enviado desde la pagina web.";
 $message .= "
         <br>
         <br>
         <p> $fechaenletra</p>
         <br>
-        <p>$_REQUEST[form_mensaje]</p>
+        <p>$_POST[form_mensaje]</p>
         ";
 
 $mail = new PHPMailer();
@@ -47,9 +50,13 @@ $mail = new PHPMailer();
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Port = 587;                                    // TCP port to connect to
-$mail->Host = 'smtp.gmail.com';                  // Specify main and backup SMTP servers
-$mail->Username = 'autenticasmtp@gmail.com';    // SMTP username
-$mail->Password = 'autenticaenvio';                   // SMTP password
+// $mail->Host = 'smtp.gmail.com';                  // Specify main and backup SMTP servers
+// $mail->Username = 'autenticasmtp@gmail.com';    // SMTP username
+// $mail->Password = 'autenticaenvio';                   // SMTP password
+$mail->Host = 'c1830658.ferozo.com';                  // Specify main and backup SMTP servers
+$mail->Username = 'informatica@defensasde.gob.ar';    // SMTP username
+$mail->Password = 'Ministerio2017';                   // SMTP password
+
 $mail->SMTPOptions = array(
         'ssl' => array(
         'verify_peer' => false,
