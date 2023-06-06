@@ -60,7 +60,7 @@ $mail->SMTPOptions = array(
 
 //Recipients
 $mail->setFrom('diagnosticogaya@gmail.com', 'Pagina web');
-//$mail->addAddress($mailto, $recipient);     // Add a recipient
+$mail->addAddress($mailto, $recipient);     // Add a recipient
 
 //Content
 $mail->isHTML(true);                                  // Set email format to HTML
