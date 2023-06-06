@@ -31,17 +31,17 @@ $mailto="vivimanzanedo@gmail.com"; // a quien se envia
 // $mailto="diagnosticogaya@gmail.com"; // a quien se envia 
 $recipient="diagnosticogaya@gmail.com"; //persona a la que se envia
 $subject = "Consulta Web."; //asunto
-// $mailfrom = $_REQUEST['form_mail'];
-// $telefono = $_REQUEST['form_telefono'];
-$mailfrom = $_POST['form_mail'];
-$telefono = $_POST['form_telefono'];
+$mailfrom = $_REQUEST['form_mail'];
+$telefono = $_REQUEST['form_telefono'];
+//$mailfrom = $_POST['form_mail'];
+//$telefono = $_POST['form_telefono'];
 $message = "Este mensaje fue enviado desde la pagina web.";
 $message .= "
         <br>
         <br>
         <p> $fechaenletra</p>
         <br>
-        <p>$_POST[form_mensaje]</p>
+        <p>$_REQUEST[form_mensaje]</p>
         ";
 
 $mail = new PHPMailer();
