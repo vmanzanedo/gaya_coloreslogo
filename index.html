@@ -624,7 +624,7 @@
                             </div>                            
                         </div>
                         <div class="my-3">
-                            <a class="btn form-control-submit-button" style="color:#0C4B80" href="enviomail.php">Enviar</a>
+			    <a class="btn form-control-submit-button" style="color:#0C4B80" onclick="envioMail()">Enviar</a> 
                         </div>
                     </div> <!-- end of div -->
                 </div> <!-- end of col -->
@@ -792,10 +792,29 @@
 
     
     <!-- Scripts -->
+	 <script>
+        function envioMail()
+            {
+                $.ajax
+                ({
+                type: "POST",
+                url: "./enviomail.php",
+                data: "form_nombre="+$("#form_nombre").val()+"&form_telefono="+$("#form_telefono").val()+"&form_mail="+$("#form_mail").val()+"&form_mensaje="+$("#form_mensaje").val(), 
+                success: function(html){
+                    alert("Mensaje enviado!");
+                    $("#form_nombre").val("");
+                    $("#form_telefono").val("");
+                    $("#form_mail").val("");
+                    $("#form_mensaje").val("");
+                        }    	
+                });
+            }
+    </script>
     <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
     <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
     <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
+    <script src="./js/jQuery/jQuery-2.2.0.min.js"></script>
     <script src="./js/script.js"></script>  <!-- Custom scripts -->
 </body>
 </html>
